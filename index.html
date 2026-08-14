@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZipLoom deploy canary</title>
+<style>
+  body{font-family:ui-sans-serif,system-ui,sans-serif;background:#0b1020;color:#e6edf3;
+       display:grid;place-items:center;min-height:100vh;margin:0}
+  main{text-align:center;padding:2rem}
+  h1{font-size:1.5rem;margin:0 0 .5rem}
+  code{background:#161b22;padding:.2rem .45rem;border-radius:4px}
+  p{color:#9aa7b4;margin:.35rem 0}
+</style>
+</head>
+<body>
+  <main>
+    <h1>ZipLoom Deploy Canary</h1>
+    <p>If you can read this, the deploy pipeline reached a live URL.</p>
+    <p><code id="marker">canary-v1</code></p>
+    <p id="t"></p>
+  </main>
+  <script>document.getElementById('t').textContent = 'rendered ' + new Date().toISOString();</script>
+</body>
+</html>
